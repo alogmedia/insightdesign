@@ -1,125 +1,108 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+    font-family: 'OrgonRegular', sans-serif;
+}
   
-  html {
+body, html {
     height: 100%;
     width: 100%;
-    background-image: url("assets/images/baggrund.jpg");
-    background-size: cover;
-    background-attachment: fixed; /* This will fix the background image in place */
 }
-
-
-body {
-    margin: 0;
-    padding: 0;
+  
+.sidebar {
     height: 100%;
-    width: 100%;
+    width: 250px; /* Adjust width as necessary */
+    position: fixed;
+    background-color: #008559; /* Your nav background color */
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 133, 89, 0.8);
-    position: relative;
+    flex-direction: column;
 }
   
-.container {
-    display: flex;
-    width: 100%;
-    height:75%;
-    max-width: 800px;
-    position: relative;
-    z-index: 2; /* Ensures the container is above the full-page overlay */
-    margin: auto; /* This will center the container on the page vertically and horizontally */
+.logo-container {
+    background-color: #D7EAD9; /* Different background color for the logo container */
+    padding: 15%;
+    text-align: center;
 }
   
-.logo-container, .login-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-  .logo-container {
-    background-size: cover;
-    background-color: #D7EAD9;
-    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-  }
-  
-  .logo {
-    max-width: 80%; /* Adjust as necessary for your logo */
+.logo-container img {
+    max-width: 100%;
     height: auto;
 }
-
-.login-container {
-    padding: 50px;
-    background-color: #FFFFFF; /* White background with slight transparency */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+  
+.nav-menu-top  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:10%;
 }
-
-.login-box {
-    width: 100%;
-}
-
-.login-box h2 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.input-group label {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    background: #fff;
-    padding: 0 5px;
-    color: #999;
-    transition: all 0.3s ease;
-}
-
-.input-group input:focus + label,
-.input-group input:valid + label {
-    top: -20px;
-    left: 0;
-    color: #666;
-    font-size: 0.75em;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #008559;
+  
+.nav-menu-top a {
+    text-decoration: none;
     color: white;
-    cursor: pointer;
-    font-size: 1em;
+    display: flex; /* Changed from block to flex */
+    align-items: center; /* Vertically center the content */
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .navikon {
+    margin-right: 5px; /* Adjust spacing to the right of the icon */
+    width: 24px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.nav-menu-top a:hover, .nav-menu-top a.active {
+    background-color: rgb(215, 234, 217, 0.3); /* Darker green for active/hover state */
 }
 
-button:hover {
-    background: darkgreen;
+.nav-menu-bottom  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom:10%;
 }
-
-.glemt-kodeord {
-    margin-top: 20px;
-    color: #666;
-    font-size: 0.75em;
+  
+.nav-menu-bottom a {
+    text-decoration: none;
+    color: white;
+    display: flex; /* Changed from block to flex */
+    align-items: center; /* Vertically center the content */
+    padding: 10px;
+    transition: background 0.3s, color 0.3s;
 }
-
-.glemt-kodeord:hover {
-    color: #333;
+  
+  
+.nav-menu-bottom a:hover, .nav-menu a.active {
+    background-color: rgb(215, 234, 217, 0.5);
+    ; /* Darker green for active/hover state */
 }
+  
+.content {
+    margin-left: 250px; /* Should match the width of the sidebar */
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+}
+  
+/* Responsive styling */
+@media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .content {
+      margin-left: 0;
+    }
+  
+    .nav-menu a {
+      padding: 15px;
+      font-size: 14px;
+    }
+}
+  
