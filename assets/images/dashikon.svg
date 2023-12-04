@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.305" height="21.91" viewBox="0 0 22.305 21.91"><g transform="translate(-33.65 -163.045)"><path d="M55,184H35V164" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/><path d="M35,179.625l10-9.375L48.75,174l5.625-5.625" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.305" height="21.91" viewBox="0 0 22.305 21.91">
+  <g id="dashikon" transform="translate(-33.65 -163.045)">
+    <path id="Path_429" data-name="Path 429" d="M55,184H35V164" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/>
+    <path id="Path_430" data-name="Path 430" d="M35,179.625l10-9.375L48.75,174l5.625-5.625" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.91"/>
+  </g>
+</svg>

@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21.812" height="25.233" viewBox="0 0 21.812 25.233"><g transform="translate(-34.094 -208.094)"><path d="M36.937,232.329A22.559,22.559,0,0,1,42.6,220.867" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M54.112,209.732l.842,8.326c.53,5.24-3.6,9.906-9.1,10.41-5.4.495-10.29-3.263-10.81-8.4a9.488,9.488,0,0,1,8.835-10.206l9.3-.853A.839.839,0,0,1,54.112,209.732Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="21.812" height="25.233" viewBox="0 0 21.812 25.233">
+  <g id="Bladikon" transform="translate(-34.094 -208.094)">
+    <path id="Path_427" data-name="Path 427" d="M36.937,232.329A22.559,22.559,0,0,1,42.6,220.867" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+    <path id="Path_428" data-name="Path 428" d="M54.112,209.732l.842,8.326c.53,5.24-3.6,9.906-9.1,10.41-5.4.495-10.29-3.263-10.81-8.4a9.488,9.488,0,0,1,8.835-10.206l9.3-.853A.839.839,0,0,1,54.112,209.732Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+  </g>
+</svg>

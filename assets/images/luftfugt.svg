@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.38 496.56">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Orgon-Black, Orgon-Black;
+        font-size: 17.66px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #3d9776;
+        stroke-width: 8.5px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #d6e9d8;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-width: 5.67px;
+      }
+
+      .cls-4 {
+        fill: #3d9776;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <path class="cls-4" d="m300.17,430.04c-28.11,32.45-69.61,52.97-115.91,52.97s-87.8-20.53-115.91-52.97h231.82Z"/>
+    <path class="cls-4" d="m327.52,384.36c-6.44,16.85-15.76,32.29-27.36,45.68H68.35c-11.6-13.39-20.92-28.83-27.36-45.68h286.53Z"/>
+    <path class="cls-3" d="m222.47,64.58h-72.42c21.27-35.39,36.83-59.31,36.83-59.31,0,0,15.02,23.92,35.59,59.31Z"/>
+    <path class="cls-3" d="m248.38,110.26h-125.12c9.41-16.47,18.53-31.94,26.8-45.68h72.42c7.98,13.75,16.8,29.22,25.9,45.68Z"/>
+    <path class="cls-3" d="m272.84,155.94H97.94c8.4-15.68,16.98-31.07,25.32-45.68h125.12c8.06,14.61,16.34,30.01,24.46,45.68Z"/>
+    <path class="cls-3" d="m295.5,201.63H74.47c7.41-15.18,15.36-30.57,23.46-45.68h174.9c7.83,15.12,15.5,30.5,22.66,45.68Z"/>
+    <path class="cls-3" d="m315.64,247.31H53.65c6.14-14.69,13.21-30.08,20.83-45.68h221.03c7.37,15.6,14.2,30.99,20.13,45.68Z"/>
+    <path class="cls-4" d="m331.49,292.99H37.23c3.97-13.91,9.61-29.37,16.41-45.68h261.99c6.57,16.31,12.03,31.77,15.85,45.68Z"/>
+    <path class="cls-4" d="m337.54,329.72c0,3-.08,5.99-.26,8.95H31.23c-.18-2.96-.26-5.95-.26-8.95,0-10.22,2.27-22.69,6.26-36.73h294.26c3.86,14.05,6.05,26.52,6.05,36.73Z"/>
+    <path class="cls-4" d="m337.28,338.67c-.92,16.01-4.3,31.35-9.76,45.68H40.99c-5.46-14.33-8.84-29.67-9.76-45.68h306.05Z"/>
+    <circle class="cls-2" cx="184.26" cy="320" r="98.11"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <text class="cls-1" transform="translate(60.78 469.21)"><tspan x="0" y="0">10</tspan></text>
+    <text class="cls-1" transform="translate(21.77 418.56)"><tspan x="0" y="0">20</tspan></text>
+    <text class="cls-1" transform="translate(4.49 367.9)"><tspan x="0" y="0">30</tspan></text>
+    <text class="cls-1" transform="translate(0 320.77)"><tspan x="0" y="0">40</tspan></text>
+    <text class="cls-1" transform="translate(13.18 274.1)"><tspan x="0" y="0">50</tspan></text>
+    <text class="cls-1" transform="translate(32.72 225.41)"><tspan x="0" y="0">60</tspan></text>
+    <text class="cls-1" transform="translate(55.95 179.48)"><tspan x="0" y="0">70</tspan></text>
+    <text class="cls-1" transform="translate(79.19 136.16)"><tspan x="0" y="0">80</tspan></text>
+    <text class="cls-1" transform="translate(103.38 89.8)"><tspan x="0" y="0">90</tspan></text>
+    <text class="cls-1" transform="translate(124.18 39.72)"><tspan x="0" y="0">100</tspan></text>
+  </g>
+</svg>

@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="20.5" viewBox="0 0 24.5 20.5"><g transform="translate(-34.25 -254.25)"><path d="M35,274l3.286-19H54.714L58,274Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M36.045,269.25H56.954" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M37.091,264.5H55.909" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M38.137,259.75H54.864" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M46.5,255v19" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M42.318,255.528,40.75,273.472" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M50.682,255.528l1.568,17.944" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="20.5" viewBox="0 0 24.5 20.5">
+  <g id="stativikon" transform="translate(-34.25 -254.25)">
+    <path id="Path_433" data-name="Path 433" d="M35,274l3.286-19H54.714L58,274Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_434" data-name="Path 434" d="M36.045,269.25H56.954" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_435" data-name="Path 435" d="M37.091,264.5H55.909" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_436" data-name="Path 436" d="M38.137,259.75H54.864" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_437" data-name="Path 437" d="M46.5,255v19" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_438" data-name="Path 438" d="M42.318,255.528,40.75,273.472" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_439" data-name="Path 439" d="M50.682,255.528l1.568,17.944" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>
