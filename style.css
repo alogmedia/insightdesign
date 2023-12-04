@@ -369,6 +369,18 @@ select {
 }
 
 
+.segraf {
+        display: flex;
+        background-color:#008559;
+        color:#FFFFFF;
+        width: 30%;
+        border-radius: 30px;
+        font-size: 1rem;
+        border: none;
+        margin-left: auto;
+        justify-content: center;
+}
+      
 /* FAR RIGHT SECTION */
 .right-section {
     width: 20%; /* Assuming a three-column layout */
