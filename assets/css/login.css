@@ -131,10 +131,16 @@ button {
     color: white;
     cursor: pointer;
     font-size: 1em;
+    
 }
 
 button:hover {
     background: darkgreen;
+}
+
+button a {
+        text-decoration: none;
+        color: #FFFFFF;
 }
 
 .glemt-kodeord {
@@ -196,6 +202,10 @@ button:hover {
     position: relative; /* Needed to position the text and image */
     text-align: center;
     line-height: 200px; /* Centers the text vertically */
+}
+
+.rolle a{
+    text-decoration: none;
 }
   
 .rolle img {

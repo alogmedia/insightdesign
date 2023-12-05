@@ -214,6 +214,7 @@ select {
   }
   
 .ramme {
+    position: relative;
     border-radius: 10px; /* Rounded corners */
     padding: 25px; /* Padding inside cards */
     display: flex; /* Using flexbox for internal card layout */
@@ -370,6 +371,7 @@ select {
 
 
 .segraf {
+        position: absolute;
         display: flex;
         background-color:#008559;
         color:#FFFFFF;
@@ -379,6 +381,9 @@ select {
         border: none;
         margin-left: auto;
         justify-content: center;
+        cursor:pointer;
+        bottom: 10px; /* Adjust as needed */
+        left: 65%;
 }
       
 /* FAR RIGHT SECTION */
@@ -452,6 +457,24 @@ select {
         gap: 10px;
         flex-direction: column;
     }
+    .segraf {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        display: flex;
+        background-color:#008559;
+        color:#FFFFFF;
+        width: 30%;
+        border-radius: 30px;
+        font-size: 1rem;
+        border: none;
+        margin-left: auto;
+        justify-content: center;
+        cursor:pointer;
+        bottom: 10px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%); /* Center the button */
+
+}
 }
 
 
