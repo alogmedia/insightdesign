@@ -1,53 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.86 218.85">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.86 218.72">
   <defs>
     <style>
-      .cls-1 {
+      .cls-1, .cls-2 {
+        letter-spacing: .04em;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
         opacity: .5;
       }
 
-      .cls-2 {
-        font-family: Georgia-Bold, Georgia;
-        font-size: 11.34px;
-        font-weight: 700;
+      .cls-5 {
+        letter-spacing: .05em;
       }
 
-      .cls-3 {
+      .cls-6 {
+        letter-spacing: .06em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        font-family: Orgon-Regular, Orgon-Regular;
+        font-size: 11.34px;
+      }
+
+      .cls-9 {
         fill: #3d9776;
       }
 
-      .cls-3, .cls-4 {
+      .cls-9, .cls-10 {
         stroke-width: 0px;
       }
 
-      .cls-4 {
+      .cls-10 {
         fill: #d6e9d8;
       }
 
-      .cls-5 {
+      .cls-11 {
+        letter-spacing: .04em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: .01em;
+      }
+
+      .cls-4 {
+        letter-spacing: .05em;
+      }
+
+      .cls-13 {
         stroke-width: 1.42px;
       }
 
-      .cls-5, .cls-6 {
+      .cls-13, .cls-14 {
         fill: none;
         stroke: #3d9776;
         stroke-miterlimit: 10;
       }
 
-      .cls-6 {
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-14 {
         stroke-width: 2.83px;
       }
     </style>
   </defs>
-  <rect class="cls-4" x="1.42" y="16.92" width="215.89" height="179.46"/>
-  <polyline class="cls-6" points="465.46 196.37 1.42 196.37 1.42 16.92 465.46 16.92"/>
-  <text class="cls-2" transform="translate(1.81 9.6)"><tspan x="0" y="0" xml:space="preserve">0 dage                   10 dage                    20 dage                                                           88 dage</tspan></text>
-  <text class="cls-2" transform="translate(1.81 215.41)"><tspan x="0" y="0" xml:space="preserve">Frøsætning                            Spire                            </tspan><tspan class="cls-1" x="259.37" y="0" xml:space="preserve">  Blomstring                            Færdig</tspan></text>
-  <line class="cls-5" x1="1.42" y1="196.37" x2="114.98" y2="179.71"/>
-  <line class="cls-5" x1="216.53" y1="141.72" x2="114.98" y2="179.71"/>
-  <line class="cls-5" x1="318.08" y1="106.65" x2="216.53" y2="141.72"/>
-  <line class="cls-5" x1="447.5" y1="94.54" x2="318.08" y2="106.65"/>
-  <circle class="cls-3" cx="115.83" cy="179.39" r="4.65"/>
-  <circle class="cls-3" cx="217.31" cy="141.46" r="4.65"/>
-  <circle class="cls-3" cx="316.15" cy="106.65" r="4.65"/>
+  <rect class="cls-10" x="1.42" y="17.09" width="215.89" height="179.46"/>
+  <polyline class="cls-14" points="465.46 196.55 1.42 196.55 1.42 17.09 465.46 17.09"/>
+  <text class="cls-8" transform="translate(1.81 9.68)"><tspan x="0" y="0">0 </tspan><tspan class="cls-12" x="8.93" y="0">d</tspan><tspan x="15.47" y="0" xml:space="preserve">age                   10 </tspan><tspan class="cls-12" x="96.79" y="0">d</tspan><tspan x="103.32" y="0" xml:space="preserve">age                               20 </tspan><tspan class="cls-12" x="214.99" y="0">d</tspan><tspan x="221.52" y="0" xml:space="preserve">age                                                           88 </tspan><tspan class="cls-15" x="403.98" y="0">d</tspan><tspan x="410.51" y="0">age</tspan></text>
+  <text class="cls-8" transform="translate(1.81 215.49)"><tspan class="cls-7" x="0" y="0">F</tspan><tspan class="cls-11" x="6.11" y="0">r</tspan><tspan class="cls-5" x="10.76" y="0">ø</tspan><tspan class="cls-6" x="17.69" y="0">s</tspan><tspan class="cls-5" x="23.46" y="0" xml:space="preserve">ætning                            Spi</tspan><tspan class="cls-2" x="167.58" y="0">r</tspan><tspan class="cls-5" x="172.23" y="0" xml:space="preserve">e                            </tspan><tspan class="cls-4" x="266.43" y="0" xml:space="preserve">  Blomstring                            </tspan><tspan class="cls-3" x="421.02" y="0">F</tspan><tspan class="cls-4" x="427.2" y="0">æ</tspan><tspan class="cls-1" x="437.31" y="0">r</tspan><tspan class="cls-4" x="441.96" y="0">dig</tspan></text>
+  <line class="cls-13" x1="1.42" y1="196.55" x2="114.98" y2="179.88"/>
+  <line class="cls-13" x1="216.53" y1="141.89" x2="114.98" y2="179.88"/>
+  <line class="cls-13" x1="318.08" y1="106.82" x2="216.53" y2="141.89"/>
+  <line class="cls-13" x1="447.5" y1="94.71" x2="318.08" y2="106.82"/>
+  <circle class="cls-9" cx="115.83" cy="179.56" r="4.65"/>
+  <circle class="cls-9" cx="217.31" cy="141.63" r="4.65"/>
+  <circle class="cls-9" cx="316.15" cy="106.82" r="4.65"/>
 </svg>

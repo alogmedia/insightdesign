@@ -247,7 +247,6 @@ select {
     padding: 40px; /* Padding inside cards */
     display: flex; /* Using flexbox for internal card layout */
     flex-direction: column; /* Stack card content vertically */
-    align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
     background-color: rgba(217, 217, 217, 0.3);
 }
@@ -559,3 +558,82 @@ select {
     margin-left:auto;
     margin-right:auto;
 }
+
+/* Stil for dropdown menu */
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    padding: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    background-color:#008559;
+    z-index: 1;
+}
+
+#settings {
+    left:3%;
+    top:12%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    background-color:#008559;
+    padding:5%;
+}
+
+ 
+.minliste{
+    text-decoration: none;
+    color:#00985F;
+    padding: 0 20px 0 0;
+}
+
+.right-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.burgerimg {
+    display:flex;
+    justify-content:center;
+    background-color: #D7EAD9; /* Different background color for the logo container */
+}
+
+.burgerimg img {
+    display: flex;
+    max-width: 25%;
+}
+
+@media (min-width: 768px) {
+    .right-menu {
+        display:none;
+        }
+    .minliste{
+        display:none;
+    }
+    }
+
+    @media (max-width: 768px) {
+        .sidebar {
+            display:none;
+            }
+        }
