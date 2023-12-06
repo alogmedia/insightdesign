@@ -630,6 +630,12 @@ select {
     .minliste{
         display:none;
     }
+    .menu {
+        display: none;
+    }
+    .burgerimg {
+        display: none;
+    }
     }
 
     @media (max-width: 768px) {
