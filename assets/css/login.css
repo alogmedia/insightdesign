@@ -115,7 +115,14 @@ input[name="kodeord"] {
     background-repeat: no-repeat;
     padding-left: 40px; /* Add padding to ensure the text does not overlap the icon */
 }
-  
+
+input[name="pinkode"] {
+    background-image: url('/assets/images/adgangskode.svg'); /* Use an SVG for scalability */
+    background-size: 20px 20px; /* Adjust the size of the icon as needed */
+    background-position: 10px center; /* Adjust the spacing from the left and center align the icon */
+    background-repeat: no-repeat;
+    padding-left: 40px; /* Add padding to ensure the text does not overlap the icon */
+}
   
 .input-group input:focus {
     outline: none; /* Removes the default focus outline */

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720.38 478.87">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: Orgon-Black, Orgon-Black;
+        font-size: 17.01px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #3d9776;
+        stroke-width: 8.5px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #d6e9d8;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #fff;
+        stroke-width: 5.67px;
+      }
+
+      .cls-5 {
+        fill: #3d9776;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <path class="cls-5" d="m454.02,414.39c-27.07,31.25-67.05,51.02-111.64,51.02s-84.57-19.77-111.64-51.02h223.28Z"/>
+    <path class="cls-5" d="m480.37,370.39c-6.2,16.23-15.18,31.1-26.35,44h-223.28c-11.17-12.9-20.15-27.77-26.35-44h275.98Z"/>
+    <path class="cls-4" d="m379.19,62.39h-69.75c20.49-34.09,35.47-57.13,35.47-57.13,0,0,14.47,23.04,34.28,57.13Z"/>
+    <path class="cls-4" d="m404.14,106.39h-120.51c9.06-15.86,17.85-30.76,25.81-44h69.75c7.69,13.24,16.18,28.14,24.95,44Z"/>
+    <path class="cls-4" d="m427.7,150.39h-168.46c8.09-15.1,16.35-29.93,24.39-44h120.51c7.76,14.07,15.74,28.9,23.56,44Z"/>
+    <path class="cls-4" d="m449.53,194.39h-212.89c7.14-14.62,14.79-29.44,22.6-44h168.46c7.54,14.56,14.93,29.38,21.83,44Z"/>
+    <path class="cls-4" d="m468.92,238.39h-252.34c5.91-14.15,12.72-28.97,20.06-44h212.89c7.1,15.03,13.68,29.85,19.39,44Z"/>
+    <path class="cls-5" d="m484.19,282.39H200.77c3.82-13.4,9.26-28.29,15.81-44h252.34c6.33,15.71,11.59,30.6,15.27,44Z"/>
+    <path class="cls-5" d="m490.02,317.77c0,2.89-.08,5.77-.25,8.62H194.99c-.17-2.85-.25-5.73-.25-8.62,0-9.84,2.19-21.85,6.03-35.38h283.42c3.72,13.53,5.83,25.54,5.83,35.38Z"/>
+    <path class="cls-5" d="m489.77,326.39c-.89,15.42-4.14,30.2-9.4,44H204.39c-5.26-13.8-8.51-28.58-9.4-44h294.78Z"/>
+    <circle class="cls-3" cx="342.38" cy="308.4" r="94.5"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <text class="cls-1" transform="translate(223.45 452.12)"><tspan x="0" y="0">10</tspan></text>
+    <text class="cls-1" transform="translate(185.88 403.33)"><tspan x="0" y="0">20</tspan></text>
+    <text class="cls-1" transform="translate(169.23 354.54)"><tspan x="0" y="0">30</tspan></text>
+    <text class="cls-1" transform="translate(164.91 309.15)"><tspan x="0" y="0">40</tspan></text>
+    <text class="cls-1" transform="translate(177.6 264.2)"><tspan x="0" y="0">50</tspan></text>
+    <text class="cls-1" transform="translate(196.43 217.3)"><tspan x="0" y="0">60</tspan></text>
+    <text class="cls-1" transform="translate(218.8 173.07)"><tspan x="0" y="0">70</tspan></text>
+    <text class="cls-1" transform="translate(241.18 131.34)"><tspan x="0" y="0">80</tspan></text>
+    <text class="cls-1" transform="translate(264.48 86.69)"><tspan x="0" y="0">90</tspan></text>
+    <text class="cls-1" transform="translate(284.52 38.45)"><tspan x="0" y="0">100</tspan></text>
+    <text class="cls-2" transform="translate(461.12 452.53) rotate(-180) scale(1 -1)"><tspan x="0" y="0">10</tspan></text>
+    <text class="cls-2" transform="translate(498.68 403.74) rotate(-180) scale(1 -1)"><tspan x="0" y="0">20</tspan></text>
+    <text class="cls-2" transform="translate(515.33 354.95) rotate(-180) scale(1 -1)"><tspan x="0" y="0">30</tspan></text>
+    <text class="cls-2" transform="translate(519.66 309.56) rotate(-180) scale(1 -1)"><tspan x="0" y="0">40</tspan></text>
+    <text class="cls-2" transform="translate(506.96 264.6) rotate(-180) scale(1 -1)"><tspan x="0" y="0">50</tspan></text>
+    <text class="cls-2" transform="translate(488.14 217.7) rotate(-180) scale(1 -1)"><tspan x="0" y="0">60</tspan></text>
+    <text class="cls-2" transform="translate(465.77 173.47) rotate(-180) scale(1 -1)"><tspan x="0" y="0">70</tspan></text>
+    <text class="cls-2" transform="translate(443.39 131.74) rotate(-180) scale(1 -1)"><tspan x="0" y="0">80</tspan></text>
+    <text class="cls-2" transform="translate(420.09 87.09) rotate(-180) scale(1 -1)"><tspan x="0" y="0">90</tspan></text>
+    <text class="cls-2" transform="translate(400.05 38.85) rotate(-180) scale(1 -1)"><tspan x="0" y="0">100</tspan></text>
+  </g>
+</svg>
