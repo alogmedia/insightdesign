@@ -18,7 +18,7 @@
   
   .sidebar {
     height: 100%;
-    width: 250px; /* Adjust width as necessary */
+    width: 200px; /* Adjust width as necessary */
     position: fixed;
     background-color: #008559; /* Your nav background color */
     color: white;
@@ -99,7 +99,7 @@
   
   .content {
     flex-grow: 1; /* Allows the content to grow and fill the remaining space */
-    margin-left: 250px; /* Should match the width of the sidebar */
+    margin-left: 200px; /* Should match the width of the sidebar */
     padding: 20px;
     background-color: white;
   }
@@ -194,7 +194,7 @@
   }
   
   .sidst-opdateret {
-    font-size: 16px; /* Adjust size as needed */
+    font-size: 12px; /* Adjust size as needed */
     color: #666; /* Grey text color */
   }
   
@@ -248,7 +248,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-top: 25%;
   }
   
   .dataluft {
@@ -261,7 +261,7 @@
   
   .graph {
     width: 100%;
-    margin-top: 5%;
+    margin-bottom:5%;
   }
   
   .ramme-content {
@@ -403,8 +403,9 @@
         border: none;
         justify-content: center;
         cursor: pointer;
-        margin-left:auto;
-        margin-top:3%;
+        position: absolute;
+        right: 5%;
+        bottom: 2%;
 }
 
   /* FAR RIGHT SECTION */
@@ -438,8 +439,8 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    column-gap: 8%;
-    text-align: center;
+    column-gap: 10%;
+    margin-left: 5%;
   }
   
   .dataoverskrift p {
@@ -448,10 +449,10 @@
   
   .sforbrug {
     display: grid;
-    align-items: center;
+    align-items: baseline;
     grid-template-columns: 0.1fr 1fr;
     font-size: 25px;
-    gap: 2%;
+    gap: 5%;
   }
   
   .sforbrug p {
@@ -460,10 +461,10 @@
   
   .vforbrug {
     display: grid;
-    align-items: center;
+    align-items: baseline;
     grid-template-columns: 0.1fr 1fr;
     font-size: 25px;
-    gap: 2%;
+    gap: 5%;
   }
   
   .vforbrug p {
@@ -472,10 +473,10 @@
   
   .bakketal {
     display: grid;
-    align-items: center;
+    align-items: baseline;
     grid-template-columns: 0.1fr 1fr;
     font-size: 25px;
-    gap: 2%;
+    gap: 5%;
   }
   
   .bakketal p {
@@ -602,15 +603,35 @@
         border: none;
         justify-content: center;
         cursor: pointer;
-        bottom: 10px; /* Adjust as needed */
+        bottom: 0; /* Adjust as needed */
 
       }
     .segrafbund {
         display: flex;
-        position: absolute;
+        position: relative;
         background-color: #008559;
         color: #ffffff;
         font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        right:0%;
+        bottom:0;
+    }
+    .doegnrapport {
+        display: flex;
+        background-color: #008559;
+        color: #ffffff;
+        width: 70%;
+        border-radius: 30px;
+        font-size: 1.5em;
+        border: none;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .dataledning {
         display: flex;
@@ -770,6 +791,7 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
   }
   
   /* Stil for dropdown menu */
