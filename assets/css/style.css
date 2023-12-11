@@ -1,3 +1,18 @@
+@font-face {
+  font-family: OrgonBold;
+  src: url(/assets/fonts/Orgon-Bold.otf);
+}
+
+@font-face {
+  font-family: OrgonRegular;
+  src: url(/assets/fonts/Orgon-Regular.otf);
+}
+
+@font-face {
+  font-family: OrgonExtraBold;
+  src: url(/assets/fonts/Orgon-ExtraBold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -368,7 +383,7 @@
     background-color: #008559;
     color: #ffffff;
     width: 30%;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1rem;
     border: none;
     justify-content: center;
@@ -384,7 +399,7 @@
     background-color: #008559;
     color: #ffffff;
     width: auto; /* Adjust width as needed, could be auto or a specific value */
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 1rem;
     border: none;
     justify-content: center;
@@ -518,7 +533,7 @@
       background-color: #008559;
       color: #ffffff;
       width: 50%;
-      border-radius: 30px;
+      border-radius: 10px;
       font-size: 1rem;
       border: none;
       justify-content: center;
@@ -598,7 +613,7 @@
         background-color: #008559;
         color: #ffffff;
         width: 30%;
-        border-radius: 30px;
+        border-radius: 10px;
         font-size: 1.5rem;
         border: none;
         justify-content: center;
