@@ -54,19 +54,30 @@
         </div>
         <div class="kontrolknap-container">
           <div class="kontrolknapper">
-            <div class="kontrol-box">
+            <div class="kontrol-box" id="tidsrammeknap">
               <img src="/assets/images/tidsrammeikon.svg" alt="Icon">
-              <select>
-                <option>Tidsramme: 1 dag</option>
+              
+               Tidsramme: 1 dag
                 <!-- other options -->
-              </select>
+            
             </div>
+
+            <div id="tidsrammedropdown" class="trdropdown">
+              <ul id="tidsliste"> </ul>
+      
+            </div>
+
             <div class="kontrol-box">
               <img src="/assets/images/tidsintervalikon.svg" alt="Icon">
-              <select>
-                <option>Tidsinterval: 1 dag</option>
+            
+                Tidsinterval: 1 dag
                 <!-- other options -->
-              </select>
+              
+            </div>
+
+            <div id="tidsintervaldropdown" class="tidropdown">
+              <ul id="tidsliste2"> </ul>
+      
             </div>
             <div class="kontrol-box">
               <img src="/assets/images/blomstikon.svg" alt="Icon">
@@ -207,7 +218,7 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/stativnr.js"></script>
+   <script src="assets/js/freya.js"></script>
     <script src="assets/js/burger.js"></script>
   </body>
 </html>

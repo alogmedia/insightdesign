@@ -1,0 +1,43 @@
+.trdropdown {
+    display: none;
+    position: absolute;
+    top: 13%;
+    left: 16%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    width: 170px;
+    }
+
+    .trdropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .trdropdown ul li {
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+.trdropdown ul li:hover {
+    background-color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+    .trdropdown {
+      top: 33%; /* Justerer positionen på mindre skærme */
+      left: 33%; /* Justerer positionen på mindre skærme */
+      width: 160px; /* Reducerer bredden på mindre skærme */
+      padding: 8px; /* Reducerer padding på mindre skærme */
+    }
+  }
+
+    
+  
+    
