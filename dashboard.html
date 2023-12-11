@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydrovertic Insight</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/freya.css">
   </head>
   <body>
     <div class="main-container">
@@ -51,11 +52,15 @@
         </div>
         <div class="kontrolknap-container">
           <div class="kontrolknapper">
-            <div class="kontrol-box">
+            <div class="kontrol-box" id="tidsrammeknap">
               <img src="/assets/images/tidsrammeikon.svg" alt="Icon">
               
                 Tidsramme: 1 dag &#129171;
                 <!-- other options -->
+            </div>
+            <div id="tidsrammedropdown" class="trdropdown">
+              <ul id="tidsliste"> </ul>
+      
             </div>
             <div class="kontrol-box">
               <img src="/assets/images/tidsintervalikon.svg" alt="Icon">
@@ -63,6 +68,10 @@
                Tidsinterval: 1 dag &#129171;
                 <!-- other options -->
               
+            </div>
+            <div id="tidsintervaldropdown" class="tidropdown">
+              <ul id="tidsliste2"> </ul>
+      
             </div>
             <div class="kontrol-box">
               <img src="/assets/images/blomstikon.svg" alt="Icon">
@@ -201,6 +210,7 @@
         </div>
       </div>
     </div>
+    <script src="/assets/js/freya.js"></script>
     <script src="assets/js/burger.js"></script>
     <script src="/assets/js/notification.js"></script>
   </body>
