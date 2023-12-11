@@ -1,17 +1,31 @@
 // Tilføj dette lige før </body> i dit eksisterende script
 document.addEventListener("DOMContentLoaded", function() {
-    var overlay = document.getElementById("overlayph");
-    var openButton = document.querySelectorAll(".segraf");
-    var closeButton = document.getElementById("closeOverlayph");
+    let overlay = document.getElementById("overlaygraf");
+    let overlayImage = overlay.querySelector("img");
+    let openButton = document.querySelectorAll(".segraf, .segrafbund");
+    let closeButton = document.getElementById("closeOverlaygraf");
   
     openButton.forEach(function(button) {
       button.addEventListener("click", function() {
         console.log(String(button));
           if (button.id.includes("phknap")) {
-              overlay.style.display = "block"; // Assuming you want to show the overlay
-              console.log("Sesam");
-          } else {
-              console.log("lort");
+            overlay.style.display = "block"; // Assuming you want to show the overlay
+            console.log("phknap blev klikket på");
+          } 
+          else if (button.id.includes("luftknap")) {
+            overlay.style.display = "block";
+            overlayImage.src = "luftgraf.svg";
+            console.log("luftknap blev klikket på");
+          }
+          else if (button.id.includes("kuldioxidknap")) {
+            overlay.style.display = "block";
+            overlayImage.src = "kuldioxidgraf.svg";
+            console.log("kuldioxidknap blev klikket på");
+          }
+          else if (button.id.includes("vandknap")) {
+            overlay.style.display = "block";
+            overlayImage.src = "vandgraf.svg";
+            console.log("vandknap blev klikket på");
           }
       });
     });
