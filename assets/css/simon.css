@@ -1,0 +1,65 @@
+.kontrol-box3{
+    display: flex;
+    align-items: center;
+    background-color: #d7ead9; /* Grey background */
+    width: 190px;
+    padding: 5px 10px; /* Padding inside the control items */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(217, 217, 217, 0.6);
+}
+
+.kontrol-box3,
+.input,
+.resultatboks {
+    font-family: "OrgonRegular", sans-serif;
+}
+
+.search {
+   position: relative;
+}
+
+.input {
+    width: 90%;
+    margin-left: 7%;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+}
+
+input:focus, input.form-control:focus {
+    outline:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+
+.resultatboks {
+    position: absolute;
+    top: 85%;
+    width: 126.5%;
+    right: -6.5%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    background-color: #e8e8e8; /* Baggrundsfarve for resultatboksen */
+    display: none; /* Skjul resultatboksen som standard */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.forslag-listeelement {
+    list-style-type: none;
+}
+
+.blomst{
+    z-index: 2;
+}
