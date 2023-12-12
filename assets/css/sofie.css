@@ -1,3 +1,7 @@
+.overlaygraf {
+    display: none;
+}
+
 .overlayph {
     display: none;
     position: fixed;

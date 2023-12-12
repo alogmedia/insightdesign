@@ -6,6 +6,8 @@
     <title>Hydrovertic Insight</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/freya.css">
+    <link rel="stylesheet" href="/assets/css/sofie.css">
+    
   </head>
   <body>
     <div class="main-container">
@@ -15,21 +17,21 @@
         </div>
         <nav class="nav-menu-top">
           <a href="#" class="active">
-            <img class="navikon" src="/assets/images/dashikon.svg">Dashboard </a>
+            <img class="navikon" src="/assets/images/ikoner/dashikon.svg">Dashboard </a>
           <a href="#">
-            <img class="navikon" src="/assets/images/bladikon.svg">Plantebibliotek </a>
+            <img class="navikon" src="/assets/images/ikoner/bladikon.svg">Plantebibliotek </a>
           <a href="#">
-            <img class="navikon" src="/assets/images/stativikon.svg">Stativoverblik </a>
+            <img class="navikon" src="/assets/images/ikoner/stativikon.svg">Stativoverblik </a>
           <a href="#">
-            <img class="navikon" src="/assets/images/doegnikon.svg">Døgnrapporter </a>
+            <img class="navikon" src="/assets/images/ikoner/doegnikon.svg">Døgnrapporter </a>
         </nav>
         <nav class="nav-menu-bottom">
           <a href="#">
-            <img class="navikon" src="/assets/images/tandhjul.svg">Indstillinger </a>
+            <img class="navikon" src="/assets/images/ikoner/tandhjul.svg">Indstillinger </a>
           <a href="#">
-            <img class="navikon" src="/assets/images/skiftikon.svg">Skift profil </a>
+            <img class="navikon" src="/assets/images/ikoner/skiftikon.svg">Skift profil </a>
           <a href="login.html">
-            <img class="navikon" src="/assets/images/logudikon.svg">Log ud </a>
+            <img class="navikon" src="/assets/images/ikoner/logudikon.svg">Log ud </a>
         </nav>
       </div>
       <div class="burgerimg">
@@ -47,13 +49,13 @@
         <div class="overskrift-container">
           <h1 class="dashoverskrift">DASHBOARD</h1>
           <div class="dato-tekst">
-            <img class="datoikon" src="/assets/images/datoikon.svg" alt="Icon">Onsdag, 08.07.2023
+            <img class="datoikon" src="/assets/images/ikoner/datoikon.svg" alt="Icon">Onsdag, 08.07.2023
           </div>
         </div>
         <div class="kontrolknap-container">
           <div class="kontrolknapper">
             <div class="kontrol-box" id="tidsrammeknap">
-              <img src="/assets/images/tidsrammeikon.svg" alt="Icon">
+              <img src="/assets/images/ikoner/tidsrammeikon.svg" alt="Icon">
               
                 Tidsramme: 1 dag &#129171;
                 <!-- other options -->
@@ -63,7 +65,7 @@
       
             </div>
             <div class="kontrol-box">
-              <img src="/assets/images/tidsintervalikon.svg" alt="Icon">
+              <img src="/assets/images/ikoner/tidsintervalikon.svg" alt="Icon">
              
                Tidsinterval: 1 dag &#129171;
                 <!-- other options -->
@@ -74,7 +76,7 @@
       
             </div>
             <div class="kontrol-box">
-              <img src="/assets/images/blomstikon.svg" alt="Icon">
+              <img src="/assets/images/ikoner/blomstikon.svg" alt="Icon">
                 Stativnr: 1 &#129171;
                 <!-- other options -->
             </div>
@@ -112,7 +114,7 @@
                 <figcaption class="phcaption">8.2</figcaption>
               </figure>
             </div>
-            <button class="segraf" type="button">Se graf</button>
+            <button class="segraf" type="button" id="phknap">Se graf</button>
           </div>
           <!-- Insert image if needed -->
           <div class="ramme">
@@ -124,7 +126,7 @@
                 </figcaption>
               </figure>
             </div>
-            <button class="segraf" type="button">Se graf</button>
+            <button class="segraf" type="button" id="luftknap">Se graf</button>
           </div>
           <!-- Insert image if needed -->
           <div class="ramme">
@@ -136,7 +138,7 @@
                 </figcaption>
               </figure>
             </div>
-            <button class="segraf" type="button">Se graf</button>
+            <button class="segraf" type="button" id="kuldioxidknap">Se graf</button>
           </div>
           <!-- Insert image if needed -->
           <!-- ... other cards ... -->
@@ -152,7 +154,7 @@
                 </figcaption>
               </figure>
             </div>
-            <button class="segrafbund" type="button">Se graf</button>
+            <button class="segrafbund" type="button" id="vandknap">Se graf</button>
           </div>
           <div class="rammebottom2">
             <div class="ramme-content">
@@ -168,49 +170,61 @@
         <div class="data-container">
           <figure class="rightikon">
             <div class="rightimg">
-              <img src="assets/images/power.svg">
+              <img src="assets/images/ikoner/power.svg">
             </div>
           </figure>
           <div class="dataoverskrift">
             <h4>Strømforbrug</h4>
-            <p><img src="assets/images/pilop.svg"> 0,30%</p>
+            <p><img src="assets/images/ikoner/pilop.svg"> 0,30%</p>
             <div class="sforbrug">1362 <p>kWh</p>
             </div>
           </div>
-          <img class="rightgraf" src="/assets/images/stroemgraf.svg" alt="Icon">
+          <img class="rightgraf" src="/assets/images/grafer/stroemgraf.svg" alt="Icon">
           <!-- Placeholder for line chart -->
         </div>
         <div class="data-container">
           <figure class="rightikon">
             <div class="rightimg">
-              <img src="assets/images/vandforb.svg">
+              <img src="assets/images/ikoner/vandforb.svg">
             </div>
           </figure>
           <div class="dataoverskrift">
             <h4>Vandforbrug</h4>
-            <p><img src="assets/images/pilned.svg"> 0,04%</p>
+            <p><img src="assets/images/ikoner/pilned.svg"> 0,04%</p>
             <div class="vforbrug">1107 <p>liter</p>
             </div>
           </div>
-          <img class="rightgraf" src="/assets/images/vandgraf.svg" alt="Icon">
+          <img class="rightgraf" src="/assets/images/grafer/vforbgraf.svg" alt="Icon">
         </div>
         <div class="data-container">
           <figure class="rightikon">
             <div class="rightimg">
-              <img src="assets/images/bakke.svg">
+              <img src="assets/images/ikoner/bakke.svg">
             </div>
           </figure>
           <div class="dataoverskrift">
             <h4>Bakketal</h4>
-            <p><img src="assets/images/linje.svg"> 0,30%</p>
+            <p><img src="assets/images/ikoner/linje.svg"> 0,30%</p>
             <div class="bakketal">879 <p>bakker</p>
             </div>
           </div>
-          <img class="rightgraf" src="/assets/images/bakkegraf.svg" alt="Icon">
+          <img class="rightgraf" src="/assets/images/grafer/bakkegraf.svg" alt="Icon">
         </div>
       </div>
     </div>
+
+
+    <!-- Overlay starter her -->
+    <div id="overlaygraf" class="overlaygraf">
+      <div class="overlay-content">
+        <img src="" alt="Graf">
+        <button id="closeOverlaygraf">Luk</button>
+      </div>
+    </div> 
+
+
     <script src="/assets/js/freya.js"></script>
+    <script src="/assets/js/sofie.js"></script>
     <script src="assets/js/burger.js"></script>
     <script src="/assets/js/notification.js"></script>
   </body>

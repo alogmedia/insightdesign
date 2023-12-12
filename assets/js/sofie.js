@@ -1,3 +1,5 @@
+console.log("Sofie.js køre...");
+
 // Tilføj dette lige før </body> i dit eksisterende script
 document.addEventListener("DOMContentLoaded", function() {
     let overlay = document.getElementById("overlaygraf");
@@ -10,21 +12,22 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(String(button));
           if (button.id.includes("phknap")) {
             overlay.style.display = "block"; // Assuming you want to show the overlay
+            overlayImage.src = "assets/images/grafer/phgraf.svg";
             console.log("phknap blev klikket på");
           } 
           else if (button.id.includes("luftknap")) {
             overlay.style.display = "block";
-            overlayImage.src = "luftgraf.svg";
+            overlayImage.src = "assets/images/grafer/luftgraf.svg";
             console.log("luftknap blev klikket på");
           }
           else if (button.id.includes("kuldioxidknap")) {
             overlay.style.display = "block";
-            overlayImage.src = "kuldioxidgraf.svg";
+            overlayImage.src = "assets/images/grafer/kuldioxidgraf.svg";
             console.log("kuldioxidknap blev klikket på");
           }
           else if (button.id.includes("vandknap")) {
             overlay.style.display = "block";
-            overlayImage.src = "vandgraf.svg";
+            overlayImage.src = "assets/images/grafer/vandgraf.svg";
             console.log("vandknap blev klikket på");
           }
       });
