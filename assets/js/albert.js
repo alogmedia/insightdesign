@@ -1,3 +1,8 @@
+let overlayalert = document.getElementById("overlayalert");
+let overlayalertImage = overlayalert.querySelector("img");
+let closeButton = document.getElementById("closeOverlayalert");
+
+
 function getTemperatureText() {
   // Get all h3 elements in .ramme-content elements
   const h3Elements = document.querySelectorAll('.ramme-content h3');
@@ -27,10 +32,17 @@ function checkValues() {
     // Check if the temperature exceeds the limit
     if (temperature > temperatureLimit) {
       console.log(temperature);
-      alert('Temperaturen er for høj!!');
+      overlayalert.style.display = "block"; // Assuming you want to show the overlay
+      overlayalert.querySelector("h2").textContent = "Advarsel - " + temperature + "°"; 
+      overlayalert.querySelector("p").textContent = "temperaturen er for høj!!";
+      overlayalertImage.src = "assets/images/alert.png";
+      console.log("alert blev åbnet");
     }
   }
   
+  closeButton.addEventListener("click", function() {
+    overlayalert.style.display = "none";
+  });
   // ... implement other checks ...
 }
 
