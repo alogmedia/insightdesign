@@ -1,16 +1,16 @@
 @font-face {
     font-family: OrgonBold;
-    src: url(/assets/fonts/Orgon-Bold.otf);
+    src: url(/hi/assets/fonts/Orgon-Bold.otf);
 }
 
 @font-face {
     font-family: OrgonRegular;
-    src: url(/assets/fonts/Orgon-Regular.otf);
+    src: url(/hi/assets/fonts/Orgon-Regular.otf);
 }
 
 @font-face {
     font-family: OrgonExtraBold;
-    src: url(/assets/fonts/Orgon-ExtraBold.otf);
+    src: url(/hi/assets/fonts/Orgon-ExtraBold.otf);
 }
 
 * {
@@ -23,7 +23,7 @@
   html {
     height: 100%;
     width: 100%;
-    background-image: url("/assets/images/baggrund.jpg");
+    background-image: url("assets/images/baggrund.jpg");
     background-size: cover;
     background-attachment: fixed; /* This will fix the background image in place */
 }
@@ -100,7 +100,7 @@ body {
 }
 
 input[name="brugernavn"] {
-    background-image: url('/assets/images/ikoner/brugernavn.svg'); /* Use an SVG for scalability */
+    background-image: url(/hi/assets/images/ikoner/brugernavn.svg); /* Use an SVG for scalability */
     background-size: 20px 20px; /* Adjust the size of the icon as needed */
     background-position: 10px center; /* Adjust the spacing from the left and center align the icon */
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ input[name="brugernavn"] {
 
 
 input[name="kodeord"] {
-    background-image: url('/assets/images/ikoner/adgangskode.svg'); /* Use an SVG for scalability */
+    background-image: url(/hi/assets/images/ikoner/adgangskode.svg); /* Use an SVG for scalability */
     background-size: 20px 20px; /* Adjust the size of the icon as needed */
     background-position: 10px center; /* Adjust the spacing from the left and center align the icon */
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ input[name="kodeord"] {
 }
 
 input[name="pinkode"] {
-    background-image: url('/assets/images/ikoner/adgangskode.svg'); /* Use an SVG for scalability */
+    background-image: url(/hi/assets/images/ikoner/adgangskode.svg); /* Use an SVG for scalability */
     background-size: 20px 20px; /* Adjust the size of the icon as needed */
     background-position: 10px center; /* Adjust the spacing from the left and center align the icon */
     background-repeat: no-repeat;
@@ -142,7 +142,11 @@ button {
 }
 
 button:hover {
-    background: darkgreen;
+    background: #FFFFFF;
+    color:#008559;
+    -webkit-box-shadow:inset 0px 0px 0px 1px #008559;
+    -moz-box-shadow:inset 0px 0px 0px 1px #008559;
+    box-shadow:inset 0px 0px 0px 1px #008559;
 }
 
 button a {

@@ -27,7 +27,7 @@ settingsDropdown.addEventListener("click", function(event) {
 });
 
 // array via const - variable
-const numbers = ['<a href="#" class="active"><img class="navikon" src="/assets/images/ikoner/dashikon.svg">Dashboard</a>', '<a href="#"><img class="navikon" src="/assets/images/ikoner/bladikon.svg">Plantebibliotek</a>', '<a href="#"><img class="navikon" src="/assets/images/ikoner/stativikon.svg">Stativoverblik</a>', '<a href="#"><img class="navikon" src="/assets/images/ikoner/doegnikon.svg">Døgnrapporter</a>','<a href="#"><img class="navikon" src="/assets/images/ikoner/tandhjul.svg">Indstillinger</a>','<a href="#"><img class="navikon" src="/assets/images/ikoner/skiftikon.svg">Skift profil</a>','<a href="login.html"><img class="navikon" src="/assets/images/ikoner/logudikon.svg">Log ud</a>',];
+const numbers = ['<a href="#" class="active"><img class="navikon" src="assets/images/ikoner/dashikon.svg">Dashboard</a>', '<a href="#"><img class="navikon" src="assets/images/ikoner/bladikon.svg">Plantebibliotek</a>', '<a href="#"><img class="navikon" src="assets/images/ikoner/stativikon.svg">Stativoverblik</a>', '<a href="#"><img class="navikon" src="assets/images/ikoner/doegnikon.svg">Døgnrapporter</a>','<a href="#"><img class="navikon" src="assets/images/ikoner/tandhjul.svg">Indstillinger</a>','<a href="#"><img class="navikon" src="assets/images/ikoner/skiftikon.svg">Skift profil</a>','<a href="login.html"><img class="navikon" src="assets/images/ikoner/logudikon.svg">Log ud</a>',];
 
 // anden variable - kan ændres
 let txt = "";

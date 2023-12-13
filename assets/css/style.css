@@ -1,900 +1,934 @@
 @font-face {
   font-family: OrgonBold;
-  src: url(/assets/fonts/Orgon-Bold.otf);
+  src: url(/hi/assets/fonts/Orgon-Bold.otf);
 }
 
 @font-face {
   font-family: OrgonRegular;
-  src: url(/assets/fonts/Orgon-Regular.otf);
+  src: url(/hi/assets/fonts/Orgon-Regular.otf);
 }
 
 @font-face {
   font-family: OrgonExtraBold;
-  src: url(/assets/fonts/Orgon-ExtraBold.otf);
+  src: url(/hi/assets/fonts/Orgon-ExtraBold.otf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "OrgonRegular", sans-serif;
-  }
-  
-  body,
-  html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .main-container {
-    display: flex; /* Use flex to layout the main sections side by side */
-    min-height: 100vh; /* Full viewport height */
-  }
-  
-  .sidebar {
-    height: 100%;
-    width: 200px; /* Adjust width as necessary */
-    position: fixed;
-    background-color: #008559; /* Your nav background color */
-    color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .logo-container {
-    background-color: #d7ead9; /* Different background color for the logo container */
-    padding: 15%;
-    text-align: center;
-  }
-  
-  .logo-container img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .nav-menu-top {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 10%;
-  }
-  
-  .nav-menu-top a {
-    text-decoration: none;
-    color: white;
-    display: flex; /* Changed from block to flex */
-    align-items: center; /* Vertically center the content */
-    padding: 10px;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .navikon {
-    margin-right: 5px; /* Adjust spacing to the right of the icon */
-    width: 24px; /* Example size, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .nav-menu-top a:hover,
-  .nav-menu-top a.active {
-    background-color: rgb(
-      215,
-      234,
-      217,
-      0.3
-    ); /* Darker green for active/hover state */
-  }
-  
-  .nav-menu-bottom {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 10%;
-  }
-  
-  .nav-menu-bottom a {
-    text-decoration: none;
-    color: white;
-    display: flex; /* Changed from block to flex */
-    align-items: center; /* Vertically center the content */
-    padding: 10px;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  .nav-menu-bottom a:hover,
-  .nav-menu a.active {
-    background-color: rgb(
-      215,
-      234,
-      217,
-      0.5
-    ); /* Darker green for active/hover state */
-  }
-  
-  .content {
-    flex-grow: 1; /* Allows the content to grow and fill the remaining space */
-    margin-left: 200px; /* Should match the width of the sidebar */
-    padding: 20px;
-    background-color: white;
-  }
-  
-  .headline {
-    padding: 10px;
-    border-bottom: 2px solid #d7ead9; /* Use your desired shade of grey */
-  }
-  
-  .headline:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px; /* Height of the line */
-    background: #d7ead9; /* Use your desired shade of grey */
-  }
-  
-  .overskrift-container {
-    display: flex;
-    justify-content: space-between; /* Aligns children on opposite ends */
-    align-items: center; /* Vertical alignment */
-    border-bottom: 1px solid #d7ead9; /* Grey line under the container */
-    padding-bottom: 10px; /* Space between text and line */
-  }
-  
-  .dashoverskrift {
-    font-size: 24px; /* Adjust size as needed */
-    font-weight: bold; /* If you want the heading to be bold */
-    margin: 0; /* Remove default margins */
-  }
-  
-  .dato-tekst {
-    font-size: 16px; /* Adjust size as needed */
-    color: #666; /* Grey text color */
-    margin: 0; /* Remove default margins */
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "OrgonRegular", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  display: flex; /* Use flex to layout the main sections side by side */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px; /* Adjust width as necessary */
+  position: fixed;
+  background-color: #008559; /* Your nav background color */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  background-color: #d7ead9; /* Different background color for the logo container */
+  padding: 15%;
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-menu-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
+.nav-menu-top a {
+  text-decoration: none;
+  color: white;
+  display: flex; /* Changed from block to flex */
+  align-items: center; /* Vertically center the content */
+  padding: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navikon {
+  margin-right: 5px; /* Adjust spacing to the right of the icon */
+  width: 24px; /* Example size, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.nav-menu-top a:hover,
+.nav-menu-top a.active {
+  background-color: rgb(
+    215,
+    234,
+    217,
+    0.3
+  ); /* Darker green for active/hover state */
+}
+
+.nav-menu-bottom {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+
+.nav-menu-bottom a {
+  text-decoration: none;
+  color: white;
+  display: flex; /* Changed from block to flex */
+  align-items: center; /* Vertically center the content */
+  padding: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu-bottom a:hover,
+.nav-menu a.active {
+  background-color: rgb(
+    215,
+    234,
+    217,
+    0.5
+  ); /* Darker green for active/hover state */
+}
+
+.content {
+  flex-grow: 1; /* Allows the content to grow and fill the remaining space */
+  margin-left: 200px; /* Should match the width of the sidebar */
+  padding: 20px;
+  background-color: white;
+}
+
+.headline {
+  padding: 10px;
+  border-bottom: 2px solid #d7ead9; /* Use your desired shade of grey */
+}
+
+.headline:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px; /* Height of the line */
+  background: #d7ead9; /* Use your desired shade of grey */
+}
+
+.overskrift-container {
+  display: flex;
+  justify-content: space-between; /* Aligns children on opposite ends */
+  align-items: center; /* Vertical alignment */
+  border-bottom: 1px solid #d7ead9; /* Grey line under the container */
+  padding-bottom: 10px; /* Space between text and line */
+}
+
+.dashoverskrift {
+  font-size: 24px; /* Adjust size as needed */
+  font-weight: bold; /* If you want the heading to be bold */
+  margin: 0; /* Remove default margins */
+}
+
+.dato-tekst {
+  font-size: 16px; /* Adjust size as needed */
+  color: #666; /* Grey text color */
+  margin: 0; /* Remove default margins */
+}
+
+.kontrolknap-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px; /* Adjust as needed */
+  margin-top: 1%;
+}
+
+.kontrolknapper {
+  display: flex;
+  gap: 10px; /* Spacing between control items */
+}
+
+.kontrol-box {
+  display: flex;
+  align-items: center;
+  background-color: #d7ead9; /* Grey background */
+  padding: 5px 10px; /* Padding inside the control items */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(217, 217, 217, 0.6);
+}
+
+.kontrol-box img {
+  margin-right: 5px; /* Spacing between icon and select box */
+}
+
+.control-item select {
+  border: none; /* Optional: removes the default border */
+  background-color: transparent; /* Optional: makes the select background transparent */
+}
+
+.sidst-opdateret {
+  white-space: nowrap; /* Keeps the text on one line */
+  margin-left: auto; /* Pushes the text to the far right */
+  position: absolute;
+  top: 10%;
+  right: 16%;
+}
+
+select {
+  border: none;
+  background-color: rgba(217, 217, 217, 0);
+}
+
+.dato-tekst {
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+}
+
+.datoikon {
+  margin-right: 5px; /* Adjust spacing to the right of the icon */
+  width: 15px; /* Example size, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  align-items: center; /* Vertically center the content */
+}
+
+.sidst-opdateret {
+  font-size: 12px; /* Adjust size as needed */
+  color: #666; /* Grey text color */
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 768px) {
   .kontrolknap-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px; /* Adjust as needed */
-    margin-top: 1%;
-  }
-  
-  .kontrolknapper {
-    display: flex;
-    gap: 10px; /* Spacing between control items */
-  }
-  
-  .kontrol-box {
-    display: flex;
-    align-items: center;
-    background-color: #d7ead9; /* Grey background */
-    padding: 5px 10px; /* Padding inside the control items */
-    border-radius: 5px; /* Rounded corners */
-    background-color: rgba(217, 217, 217, 0.6);
-  }
-  
-  .kontrol-box img {
-    margin-right: 5px; /* Spacing between icon and select box */
-  }
-  
-  .control-item select {
-    border: none; /* Optional: removes the default border */
-    background-color: transparent; /* Optional: makes the select background transparent */
-  }
-  
-  .sidst-opdateret {
-    white-space: nowrap; /* Keeps the text on one line */
-    margin-left: auto; /* Pushes the text to the far right */
-  }
-  
-  select {
-    border: none;
-    background-color: rgba(217, 217, 217, 0);
-  }
-  
-  .dato-tekst {
     flex-direction: column;
-    justify-content: flex-start;
-    justify-content: center;
+    align-items: center;
   }
-  
-  .datoikon {
-    margin-right: 5px; /* Adjust spacing to the right of the icon */
-    width: 15px; /* Example size, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    align-items: center; /* Vertically center the content */
-  }
-  
+
   .sidst-opdateret {
-    font-size: 12px; /* Adjust size as needed */
-    color: #666; /* Grey text color */
+    display: none;
   }
-  
-  /* Add responsiveness if needed */
-  @media (max-width: 768px) {
-    .kontrolknap-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .sidst-opdateret {
-      margin-top:2%;
-      margin-right:auto;
-    }
-  }
-  
-  /* Dashboard CSS */
-  
-  .dashboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding-bottom: 10px;
-  }
-  
-  .ramme, .rammebottom, .rammebottom2 {
-    border-radius: 10px;
-    padding: 25px;
-    background-color: rgba(217, 217, 217, 0.3);
-    position: relative;
-  }
-  
-  /* Dashboardbottom CSS */
-  .dashboardbottom {
-    display: grid;
-    grid-template-columns: 0.987fr 2fr; /* Two columns with 2:1 ratio */
-    gap: 10px; /* Space between the two elements */
-  }
-  
-  
-  .dataph, .datakul {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4%;
-  }
+}
 
-  .dataledning {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25%;
-  }
-  
-  .dataluft {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-  }
-  
-  .graph {
-    width: 100%;
-    margin-bottom:5%;
-  }
-  
-  .ramme-content {
-    text-align: left; /* Center text within the content area */
-  }
-  
-  .ramme-content h3 {
-    margin-bottom: 10%;
-  }
-  
-  .ramme-content p {
-    font-size: 24px;
-  }
-  
-  
-  /* Ensure that the container of the image is positioned relatively */
-  .thefigure {
-    position: relative;
-    width: 100%; /* Make the figure responsive */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Make sure your image is responsive and maintains its aspect ratio */
-  .dataph {
-    width: 100%;
-    height: auto;
-    display: block; /* This will prevent the image from inline default alignment issues */
-  }
+/* Dashboard CSS */
 
-  .phcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 66%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half the width and height to center it */
-    font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
-    white-space: nowrap; /* Ensure text does not wrap */
-  }
-  
-  .phcaption p {
-    margin: 0; /* Remove margin from the paragraph if any */
-    font-size: 0.4em; /* Make font size relative to its container */
-  }
-  
-  .luftcaption {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    top: 65%; /* Center vertically */
-    left: 51%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half the width and height to center it */
-    font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
-    white-space: nowrap; /* Ensure text does not wrap */
-    gap: 5%;
-  }
-  
-  .luftcaption p {
-    margin: 0; /* Remove margin from the paragraph if any */
-    font-size: 0.4em; /* Make font size relative to its container */
-  }
-  
-  .kulcaption {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    top: 46%; /* Center vertically */
-    left: 54%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half the width and height to center it */
-    font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
-    white-space: nowrap; /* Ensure text does not wrap */
-    gap: 5%;
-  }
-  
-  .kulcaption p {
-    margin: 0; /* Remove margin from the paragraph if any */
-    font-size: 0.4em; /* Make font size relative to its container */
-  }
-  
-  .ledningcaption {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    top: 73%; /* Center vertically */
-    left: 65%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half the width and height to center it */
-    font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
-    white-space: nowrap; /* Ensure text does not wrap */
-    gap: 5%;
-  }
-  
-  .ledningcaption p {
-    margin: 0; /* Remove margin from the paragraph if any */
-    font-size: 0.4em; /* Make font size relative to its container */
-  }
-  
-  .segraf {
-    position: absolute;
-    display: flex;
-    background-color: #008559;
-    color: #ffffff;
-    width: 30%;
-    border-radius: 10px;
-    font-size: 1rem;
-    border: none;
-    justify-content: center;
-    cursor: pointer;
-    bottom: 10px; /* Adjust as needed */
-    right:5%;
-  }
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 10px;
+}
 
-  .segrafbund {
-    position: absolute;
-    bottom: 2%; /* Adjust as needed */
-    display: flex;
-    background-color: #008559;
-    color: #ffffff;
-    width: auto; /* Adjust width as needed, could be auto or a specific value */
-    border-radius: 10px;
-    font-size: 1rem;
-    border: none;
-    justify-content: center;
-    cursor: pointer;
-    width:40%;
-    right: 5%;
+.ramme,
+.rammebottom,
+.rammebottom2 {
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgba(217, 217, 217, 0.3);
+  position: relative;
+}
+
+/* Dashboardbottom CSS */
+.dashboardbottom {
+  display: grid;
+  grid-template-columns: 0.987fr 2fr; /* Two columns with 2:1 ratio */
+  gap: 10px; /* Space between the two elements */
+}
+
+.dataph,
+.datakul {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+}
+
+.dataledning {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+}
+
+.dataluft {
+  display: flex;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.graph {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.ramme-content {
+  text-align: left; /* Center text within the content area */
+}
+
+.ramme-content h3 {
+  margin-bottom: 10%;
+  font-family: OrgonBold;
+}
+
+.ramme-content p {
+  font-size: 24px;
+  font-family: OrgonRegular;
+}
+
+/* Ensure that the container of the image is positioned relatively */
+.thefigure {
+  position: relative;
+  width: 100%; /* Make the figure responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Make sure your image is responsive and maintains its aspect ratio */
+.dataph {
+  width: 100%;
+  height: auto;
+  display: block; /* This will prevent the image from inline default alignment issues */
+}
+
+.phcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 66%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the position by half the width and height to center it */
+  font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
+  white-space: nowrap; /* Ensure text does not wrap */
+}
+
+.phcaption p {
+  margin: 0; /* Remove margin from the paragraph if any */
+  font-size: 0.4em; /* Make font size relative to its container */
+}
+
+.luftcaption {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 65%; /* Center vertically */
+  left: 56%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the position by half the width and height to center it */
+  font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
+  white-space: nowrap; /* Ensure text does not wrap */
+  gap: 5%;
+}
+
+.luftcaption p {
+  margin: 0; /* Remove margin from the paragraph if any */
+  font-size: 0.4em; /* Make font size relative to its container */
+}
+
+.kulcaption {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 46%; /* Center vertically */
+  left: 54%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the position by half the width and height to center it */
+  font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
+  white-space: nowrap; /* Ensure text does not wrap */
+  gap: 5%;
+}
+
+.kulcaption p {
+  margin: 0; /* Remove margin from the paragraph if any */
+  font-size: 0.4em; /* Make font size relative to its container */
+}
+
+.ledningcaption {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 73%; /* Center vertically */
+  left: 65%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset the position by half the width and height to center it */
+  font-size: 1.5vw; /* Example: 4% of viewport width, adjust as needed */
+  white-space: nowrap; /* Ensure text does not wrap */
+  gap: 5%;
+}
+
+.ledningcaption p {
+  margin: 0; /* Remove margin from the paragraph if any */
+  font-size: 0.4em; /* Make font size relative to its container */
+}
+
+.segraf {
+  position: absolute;
+  display: flex;
+  background-color: #008559;
+  color: #ffffff;
+  width: 30%;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  bottom: 10px; /* Adjust as needed */
+  right: 5%;
+}
+
+.segraf:hover {
+  background: #ffffff;
+  color: #008559;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #008559;
+  -moz-box-shadow: inset 0px 0px 0px 1px #008559;
+  box-shadow: inset 0px 0px 0px 1px #008559;
+}
+
+.segrafbund {
+  position: absolute;
+  bottom: 2%; /* Adjust as needed */
+  display: flex;
+  background-color: #008559;
+  color: #ffffff;
+  width: auto; /* Adjust width as needed, could be auto or a specific value */
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  width: 40%;
+  right: 5%;
+}
+
+.segrafbund:hover {
+  background: #ffffff;
+  color: #008559;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #008559;
+  -moz-box-shadow: inset 0px 0px 0px 1px #008559;
+  box-shadow: inset 0px 0px 0px 1px #008559;
 }
 
 .doegnrapport {
-        display: flex;
-        background-color: #008559;
-        color: #ffffff;
-        width: 40%;
-        border-radius: 30px;
-        font-size: 1rem;
-        border: none;
-        justify-content: center;
-        cursor: pointer;
-        position: absolute;
-        right: 5%;
-        bottom: 2%;
+  display: flex;
+  background-color: #008559;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  width: 30%;
+  height: 3%;
+  align-items: center;
+  margin-top: 1%;
 }
 
-  /* FAR RIGHT SECTION */
-  .right-section {
-    width: 20%; /* Assuming a three-column layout */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: rgba(217, 217, 217, 0.3);
-  }
-  
-  .data-container {
-    background-color: #d9d9d9; /* Your grey color */
-    border-radius: 10px;
-    padding: 25px;
-    background-color: rgba(215, 234, 217, 1);
-    margin-bottom: 10%;
-  }
-  
-  .data-container h3 {
-    color: #333; /* Dark grey or black for text */
-    margin-bottom: 10px;
-  }
-  
-  .data-container p {
-    color: #333;
-    font-size: 1.5em; /* Larger text for data numbers */
-  }
-  
-  .dataoverskrift {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-    margin-left: 5%;
-  }
-  
-  .dataoverskrift p {
-    font-size: 14px;
-  }
-  
-  .sforbrug {
-    display: grid;
-    align-items: baseline;
-    grid-template-columns: 0.1fr 1fr;
-    font-size: 25px;
-    gap: 5%;
-  }
-  
-  .sforbrug p {
-    font-size: 10px;
-  }
-  
-  .vforbrug {
-    display: grid;
-    align-items: baseline;
-    grid-template-columns: 0.1fr 1fr;
-    font-size: 25px;
-    gap: 5%;
-  }
-  
-  .vforbrug p {
-    font-size: 10px;
-  }
-  
-  .bakketal {
-    display: grid;
-    align-items: baseline;
-    grid-template-columns: 0.1fr 1fr;
-    font-size: 25px;
-    gap: 5%;
-  }
-  
-  .bakketal p {
-    font-size: 10px;
-  }
-  /* .data-visualization-line {
+.doegnrapport:hover {
+  background: #ffffff;
+  color: #008559;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #008559;
+  -moz-box-shadow: inset 0px 0px 0px 1px #008559;
+  box-shadow: inset 0px 0px 0px 1px #008559;
+}
+
+/* FAR RIGHT SECTION */
+.right-section {
+  width: 20%; /* Assuming a three-column layout */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.data-container {
+  background-color: #d9d9d9; /* Your grey color */
+  border-radius: 10px;
+  padding: 25px;
+  background-color: rgba(215, 234, 217, 1);
+  margin-bottom: 10%;
+}
+
+.data-container h3 {
+  color: #333; /* Dark grey or black for text */
+  margin-bottom: 10px;
+}
+
+.data-container p {
+  color: #333;
+  font-size: 1.5em; /* Larger text for data numbers */
+}
+
+.dataoverskrift {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  margin-left: 5%;
+}
+
+.dataoverskrift p {
+  font-size: 14px;
+}
+
+.sforbrug {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 0.1fr 1fr;
+  font-size: 25px;
+  gap: 5%;
+}
+
+.sforbrug p {
+  font-size: 10px;
+}
+
+.vforbrug {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 0.1fr 1fr;
+  font-size: 25px;
+  gap: 5%;
+}
+
+.vforbrug p {
+  font-size: 10px;
+}
+
+.bakketal {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 0.1fr 1fr;
+  font-size: 25px;
+  gap: 5%;
+}
+
+.bakketal p {
+  font-size: 10px;
+}
+/* .data-visualization-line {
       height: 2px;
       background-color: #333;
       width: 100%;
   } 
   */
-  
-  /* Add responsiveness if needed */
-  @media (max-width: 1366px) {
-    .right-section {
-      width: 50%;
-    }
-    .dashboard {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px; /* Space between cards */
-      padding-bottom: 10px;
-    }
-    /* Dashboardbottom CSS */
-    .dashboardbottom {
-      display: grid;
-      grid-template-columns: 1fr 2fr; /* Two columns with 2:1 ratio */
-      gap: 10px; /* Space between the two elements */
-    }
-    .kontrolknapper {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-    }
-    .segraf {
-      position: absolute;
-      bottom: 10px; /* Adjust as needed */
-      display: flex;
-      background-color: #008559;
-      color: #ffffff;
-      width: 50%;
-      border-radius: 10px;
-      font-size: 1rem;
-      border: none;
-      justify-content: center;
-      cursor: pointer;
-      bottom: 10px; /* Adjust as needed */
-    }
-  }
 
-  /* Add responsiveness if needed */
-  @media (max-width: 1024px) {
-    .right-section {
-      width: 50%;
-    }
-    .dashboard {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px; /* Space between cards */
-      padding-bottom: 10px;
-    }
-    /* Dashboardbottom CSS */
-    .dashboardbottom {
-      display: grid;
-      grid-template-columns: 1fr; /* Two columns with 2:1 ratio */
-      gap: 10px; /* Space between the two elements */
-    }
-    .kontrolknapper {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-    }
-    .segraf {
-        display: flex;
-        position: absolute;
-        background-color: #008559;
-        color: #ffffff;
-        font-size: 1rem;
-      }
-      .segrafbund {
-          display: flex;
-          position: absolute;
-          background-color: #008559;
-          color: #ffffff;
-          width: 40%;
-          font-size: 1rem;
-        }
+/* Add responsiveness if needed */
+@media (max-width: 1366px) {
+  .right-section {
+    width: 50%;
   }
-  
-  /* Add responsiveness if needed */
-  @media (max-width: 768px) {
-    .right-section {
-      width: 50%;
-    }
-    .dashboard {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px; /* Space between cards */
-      padding-bottom: 10px;
-    }
-    /* Dashboardbottom CSS */
-    .dashboardbottom {
-      display: grid;
-      grid-template-columns: 1fr; /* Two columns with 2:1 ratio */
-      gap: 10px; /* Space between the two elements */
-    }
-    .kontrolknapper {
-      display: flex;
-      gap: 10px;
-      margin-top: 2%;
-      /* align-items: center; */
-    }
-    .segraf {
-        display: flex;
-        position: relative;
-        margin-left:auto;
-        margin-right:auto;
-        right:0%;
-        background-color: #008559;
-        color: #ffffff;
-        width: 30%;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        border: none;
-        justify-content: center;
-        cursor: pointer;
-        bottom: 0; /* Adjust as needed */
-
-      }
-    .segrafbund {
-        display: flex;
-        position: relative;
-        background-color: #008559;
-        color: #ffffff;
-        font-size: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        right:0%;
-        bottom:0;
-    }
-    .doegnrapport {
-        display: flex;
-        background-color: #008559;
-        color: #ffffff;
-        width: 70%;
-        border-radius: 30px;
-        font-size: 1.5em;
-        border: none;
-        justify-content: center;
-        cursor: pointer;
-        position: relative;
-        right: 0;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .dataledning {
-        display: flex;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom:5%;
-      }
-      .dataoverskrift {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .sforbrug {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr;
-        font-size: 25px;
-      }
-      
-      .vforbrug {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr;
-        font-size: 25px;
-      }
-      
-      .bakketal {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr;
-        font-size: 25px;
-      }
-      .ramme-content {
-        text-align: center;
-      }
-  }
-  
-  /* Responsive styles if needed */
-  @media (max-width: 768px) {
-    .main-container {
-      flex-direction: column; /* Stack the sidebar and content on top of each other on smaller screens */
-    }
-  
-    .sidebar,
-    .content,
-    .right-section {
-      width: 100%; /* Full width for each section on smaller screens */
-    }
-  }
-  
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-  
-    .content {
-      margin-left: 0;
-    }
-  
-    .nav-menu a {
-      padding: 15px;
-      font-size: 14px;
-    }
-
-    .phcaption {
-        font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-      
-      .luftcaption {
-        font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
-        top: 64%;
-        left: 49.5%;
-      }
-      
-      .kulcaption {
-        font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
-        top: 45%; /* Center vertically */
-        left: 52%; /* Center horizontally */
-      }
-      
-      .ledningcaption {
-        font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-  }
-  
-  /* Responsive styles if needed */
-  @media (max-width: 1024px) {
-    .main-container {
-      display: flex; /* Use flex to layout the main sections side by side */
-      min-height: 100vh; /* Full viewport height */
-    }
-  
-    .sidebar,
-    .content,
-    .right-section {
-      width: 100%; /* Full width for each section on smaller screens */
-    }
-    .phcaption {
-        font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-      
-      .luftcaption {
-        font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-      
-      .kulcaption {
-        font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-      
-      .ledningcaption {
-        font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
-      }
-  }
-  
-  /* Responsive styling */
-  @media (max-width: 1024px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-  
-    .content {
-      margin-left: 0;
-      width: 100%;
-    }
-  
-    .nav-menu a {
-      padding: 15px;
-      font-size: 14px;
-    }
-  }
-  
-  .rightikon {
+  .dashboard {
     display: grid;
-    border-radius: 50%; /* Makes the div circular */
-    background-color: rgba(0, 133, 89, 0.3);
-    width: 55px;
-    height: 55px;
-    margin-bottom: 5%;
-    position: relative; /* Needed to position the text and image */
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; /* Space between cards */
+    padding-bottom: 10px;
   }
-
-  .rightgraf {
-    width: 75%;
+  /* Dashboardbottom CSS */
+  .dashboardbottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with 2:1 ratio */
+    gap: 10px; /* Space between the two elements */
+  }
+  .kontrolknapper {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    gap: 10px;
+    flex-direction: column;
   }
-  
-  /* Stil for dropdown menu */
-  
-  .dropdown ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown ul li {
-    padding: 5px;
+  .segraf {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    display: flex;
+    background-color: #008559;
+    color: #ffffff;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    justify-content: center;
     cursor: pointer;
-    padding-top: 5px;
-    font-size: 15px;
+    bottom: 10px; /* Adjust as needed */
   }
-  
-  .dropdown a {
-    text-decoration: none;
-    color: #ffffff;
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 1024px) {
+  .right-section {
+    width: 50%;
   }
-  
-  .dropdown {
-    display: none;
-    flex-direction: column;
-    background-color: #008559;
-    z-index: 1;
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Space between cards */
+    padding-bottom: 10px;
   }
-  
-  #settings {
-    left: 3%;
-    top: 12%;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
+  /* Dashboardbottom CSS */
+  .dashboardbottom {
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns with 2:1 ratio */
+    gap: 10px; /* Space between the two elements */
   }
-  
-  .menu {
+  .kontrolknapper {
     display: flex;
-    background-color: #008559;
-    padding: 5%;
-  }
-  
-  .minliste {
-    text-decoration: none;
-    color: #00985f;
-    padding: 0 20px 0 0;
-  }
-  
-  .right-menu {
-    display: flex;
+    gap: 10px;
     flex-direction: column;
   }
-  
-  .burgerimg {
+  .segraf {
     display: flex;
+    position: absolute;
+    background-color: #008559;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .segrafbund {
+    display: flex;
+    position: absolute;
+    background-color: #008559;
+    color: #ffffff;
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+
+/* Add responsiveness if needed */
+@media (max-width: 768px) {
+  .right-section {
+    width: 50%;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Space between cards */
+    padding-bottom: 10px;
+  }
+  /* Dashboardbottom CSS */
+  .dashboardbottom {
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns with 2:1 ratio */
+    gap: 10px; /* Space between the two elements */
+  }
+  .kontrolknapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 2%;
+    /* align-items: center; */
+  }
+  .segraf {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0%;
+    background-color: #008559;
+    color: #ffffff;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: none;
     justify-content: center;
-    background-color: #d7ead9; /* Different background color for the logo container */
+    cursor: pointer;
+    bottom: 0; /* Adjust as needed */
   }
-  
-  .burgerimg img {
+  .segrafbund {
     display: flex;
-    max-width: 25%;
+    position: relative;
+    background-color: #008559;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0%;
+    bottom: 0;
   }
-  
-  @media (min-width: 768px) {
-    .right-menu {
-      display: none;
-    }
-    .minliste {
-      display: none;
-    }
-    .menu {
-      display: none;
-    }
-    .burgerimg {
-      display: none;
-    }
+  .doegnrapport {
+    display: flex;
+    background-color: #008559;
+    color: #ffffff;
+    width: 70%;
+    border-radius: 30px;
+    font-size: 1.5em;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  @media (max-width: 768px) {
-    .sidebar {
-      display: none;
-    }
+  .dataledning {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+  .dataoverskrift {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
+  .sforbrug {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    font-size: 25px;
+  }
 
+  .vforbrug {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    font-size: 25px;
+  }
 
+  .bakketal {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    font-size: 25px;
+  }
+  .ramme-content {
+    text-align: center;
+  }
+}
 
-  
-  
+/* Responsive styles if needed */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack the sidebar and content on top of each other on smaller screens */
+  }
+
+  .sidebar,
+  .content,
+  .right-section {
+    width: 100%; /* Full width for each section on smaller screens */
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .nav-menu a {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .phcaption {
+    font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+
+  .luftcaption {
+    font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
+    top: 64%;
+    left: 49.5%;
+  }
+
+  .kulcaption {
+    font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
+    top: 45%; /* Center vertically */
+    left: 52%; /* Center horizontally */
+  }
+
+  .ledningcaption {
+    font-size: 7vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+}
+
+/* Responsive styles if needed */
+@media (max-width: 1024px) {
+  .main-container {
+    display: flex; /* Use flex to layout the main sections side by side */
+    min-height: 100vh; /* Full viewport height */
+  }
+
+  .sidebar,
+  .content,
+  .right-section {
+    width: 100%; /* Full width for each section on smaller screens */
+  }
+  .phcaption {
+    font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+
+  .luftcaption {
+    font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+
+  .kulcaption {
+    font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+
+  .ledningcaption {
+    font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-menu a {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+.rightikon {
+  display: grid;
+  border-radius: 50%; /* Makes the div circular */
+  background-color: rgba(0, 133, 89, 0.3);
+  width: 55px;
+  height: 55px;
+  margin-bottom: 5%;
+  position: relative; /* Needed to position the text and image */
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rightgraf {
+  width: 75%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+/* Stil for dropdown menu */
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  padding: 5px;
+  cursor: pointer;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background-color: #008559;
+  z-index: 1;
+}
+
+#settings {
+  left: 3%;
+  top: 12%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  background-color: #008559;
+  padding: 5%;
+}
+
+.minliste {
+  text-decoration: none;
+  color: #00985f;
+  padding: 0 20px 0 0;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.burgerimg {
+  display: flex;
+  justify-content: center;
+  background-color: #d7ead9; /* Different background color for the logo container */
+}
+
+.burgerimg img {
+  display: flex;
+  max-width: 25%;
+}
+
+@media (min-width: 768px) {
+  .right-menu {
+    display: none;
+  }
+  .minliste {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .burgerimg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
