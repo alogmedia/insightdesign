@@ -8,11 +8,6 @@
     background-color: rgba(217, 217, 217, 0.6);
 }
 
-.kontrol-box3,
-.input,
-.resultatboks {
-    font-family: "OrgonRegular", sans-serif;
-}
 
 .search {
    position: relative;
@@ -43,21 +38,27 @@ input[type=number]{
 
 .resultatboks {
     position: absolute;
-    top: 85%;
+    top: 130%;
     width: 126.5%;
-    right: -6.5%;
+    right: -6.9%;
     padding-left: 10px;
     padding-right: 5px;
     padding-bottom: 5px;
     padding-top: 15px;
-    background-color: #e8e8e8; /* Baggrundsfarve for resultatboksen */
+    background-color: #f6f6f6; /* Baggrundsfarve for resultatboksen */
     display: none; /* Skjul resultatboksen som standard */
     border-radius: 10px;
     z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .forslag-listeelement {
     list-style-type: none;
+    padding: 5px;
+}
+
+.forslag-listeelement:hover{
+    background-color: #eaeaea;
 }
 
 .blomst{
