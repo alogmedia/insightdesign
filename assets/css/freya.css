@@ -2,7 +2,7 @@
     display: none;
     position: absolute;
     top: 13%;
-    left: 16%;
+    left: 15.3%;
     position: absolute;
     display: none;
     flex-direction: column;
@@ -31,12 +31,22 @@
 
 @media (max-width: 768px) {
     .trdropdown {
-      top: 33%; /* Justerer positionen på mindre skærme */
-      left: 33%; /* Justerer positionen på mindre skærme */
-      width: 160px; /* Reducerer bredden på mindre skærme */
-      padding: 8px; /* Reducerer padding på mindre skærme */
+      top: 33%; 
+      left: 33%; 
+      width: 160px; 
+      padding: 8px; 
     }
   }
+
+  @media (min-width: 601px) and (max-width: 1280px) {
+    .trdropdown {
+      top: 41%; 
+      left: 40%; 
+      width: 170px; 
+      padding: 12px; 
+    }
+  }
+  
 
     
   
