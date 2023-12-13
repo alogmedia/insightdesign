@@ -1,13 +1,15 @@
+//Variabler
 let overlayalert = document.getElementById("overlayalert");
 let overlayalertImage = overlayalert.querySelector("img");
 let closeButton = document.getElementById("closeOverlayalert");
 
 
+// Funktion for at få temperatur
 function getTemperatureText() {
-  // Get all h3 elements in .ramme-content elements
+  // h3
   const h3Elements = document.querySelectorAll('.ramme-content h3');
   
-  // Iterate through them to find one that contains "Temperatur"
+  // find temperatur
   for (let h3 of h3Elements) {
     if (h3.textContent.includes("Temperatur")) {
       // Get the next sibling element, which should be the <p> with the temperature
@@ -15,21 +17,21 @@ function getTemperatureText() {
     }
   }
 
-  return null; // If "Temperatur" was not found
+  return null; // hvis ingen temperatur er fundet
 }
 
 function checkValues() {
-  // Define your limits
+  // variable for max
   const temperatureLimit = 40;
   
-  // Get the current temperature value from the DOM
+  // Temperatur fra DOM
   const temperatureText = getTemperatureText();
   
   if (temperatureText) {
-    // Remove the '°' character and convert to a number
+    // Fjern symbol for at konvertere til nummer.
     const temperature = parseFloat(temperatureText.replace('°', ''));
     
-    // Check if the temperature exceeds the limit
+    // Se om temperatur er godkendt.
     if (temperature > temperatureLimit) {
       console.log(temperature);
       overlayalert.style.display = "block"; // Assuming you want to show the overlay
@@ -43,8 +45,7 @@ function checkValues() {
   closeButton.addEventListener("click", function() {
     overlayalert.style.display = "none";
   });
-  // ... implement other checks ...
 }
 
-// Run the checkValues function at regular intervals
-setInterval(checkValues, 5000); // Checks every 5 minutes
+
+setInterval(checkValues, 5000); // 5 sekunder
