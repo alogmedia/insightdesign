@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/css/albert.css">
   </head>
   <body>
-    <div class="main-container">
+    <main class="main-container">
       <div class="sidebar">
         <div class="logo-container">
           <img src="/assets/images/logo.png" alt="Hydrovertic Insight Logo">
@@ -46,7 +46,7 @@
           <ul id="minliste"></ul>
         </section>
       </nav>
-      <div class="content">
+      <section class="content">
         <div class="overskrift-container">
           <h1 class="dashoverskrift">DASHBOARD</h1>
           <div class="dato-tekst">
@@ -59,7 +59,6 @@
               <img src="/assets/images/ikoner/tidsrammeikon.svg" alt="Icon">
               
                 Tidsramme: 1 dag &#129171;
-                <!-- other options -->
             </div>
             <div id="tidsrammedropdown" class="trdropdown">
               <ul id="tidsliste"> </ul>
@@ -69,7 +68,6 @@
               <img src="/assets/images/ikoner/tidsintervalikon.svg" alt="Icon">
              
                Tidsinterval: 1 dag &#129171;
-                <!-- other options -->
               
             </div>
             <div id="tidsintervaldropdown" class="tidropdown">
@@ -86,28 +84,27 @@
           </div>
           <div class="sidst-opdateret"> Sidst opdateret: 13:42:00 </div>
         </div>
-        <!-- Dashboard goes here -->
+        <!-- Dashboard kolonner starter her -->
         <div class="dashboard">
           <div class="ramme">
             <div class="ramme-content">
               <h3>Stativer i brug</h3>
               <p>47 / 60</p>
             </div>
-            <!-- Insert image if needed -->
           </div>
           <div class="ramme">
             <div class="ramme-content">
               <h3>Plantearter i vækst</h3>
               <p>41 / 67</p>
             </div>
-            <!-- Insert image if needed -->
           </div>
           <div class="ramme">
             <div class="ramme-content">
               <h3>Temperatur</h3>
               <p>29 °</p>
             </div>
-            <!-- Insert image if needed -->
+          <!-- Grafer starter her -->
+          <!-- Vands pH -->
           </div>
           <div class="ramme">
             <div class="ramme-content">
@@ -119,7 +116,7 @@
             </div>
             <button class="segraf" type="button" id="phknap">Se graf</button>
           </div>
-          <!-- Insert image if needed -->
+        <!-- Luftfughtihed -->
           <div class="ramme">
             <div class="ramme-content">
               <h3>Luftfugtighed</h3>
@@ -131,7 +128,7 @@
             </div>
             <button class="segraf" type="button" id="luftknap">Se graf</button>
           </div>
-          <!-- Insert image if needed -->
+        <!-- Kuldioxid -->
           <div class="ramme">
             <div class="ramme-content">
               <h3>Kuldioxid</h3>
@@ -143,11 +140,10 @@
             </div>
             <button class="segraf" type="button" id="kuldioxidknap">Se graf</button>
           </div>
-          <!-- Insert image if needed -->
-          <!-- ... other cards ... -->
         </div>
+        <!-- Kolonner med grafer i bunden -->
         <div class="dashboardbottom">
-          <!-- Insert image if needed -->
+        <!-- Vands ledningsevne -->
           <div class="rammebottom">
             <div class="ramme-content">
               <h3>Vands ledningsevne</h3>
@@ -167,9 +163,9 @@
             <button class="doegnrapport" type="button">Hent Døgnrapport</button>
           </div>
         </div>
-      </div>
+      </section>
       <!-- RIGHT SECTION -->
-      <div class="right-section">
+      <section class="right-section">
         <div class="data-container">
           <figure class="rightikon">
             <div class="rightimg">
@@ -213,19 +209,17 @@
           </div>
           <img class="rightgraf" src="/assets/images/grafer/bakkegraf.svg" alt="Icon">
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
 
-    <!-- Overlay starter her -->
+    <!-- Overlay på grafer starter her -->
     <div id="overlaygraf" class="overlaygraf">
-      <div class="overlay-content">
+      <figure class="overlay-content">
         <img src="" alt="Graf">
         <button id="closeOverlaygraf">Luk</button>
-      </div>
+      </figure>
     </div> 
-
-
     <!-- Alert overlay starter her -->
     <div id="overlayalert" class="overlayalert">
       <div class="overlay-alert">
@@ -235,13 +229,10 @@
         <button id="closeOverlayalert">Luk</button>
       </div>
     </div> 
-
     <script src="/assets/js/freya.js"></script>
     <script src="/assets/js/sofie.js"></script>
     <script src="/assets/js/simon.js"></script>
     <script src="/assets/js/albert.js"></script>
     <script src="assets/js/burger.js"></script>
-    
-    
   </body>
 </html>
