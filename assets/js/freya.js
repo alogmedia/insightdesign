@@ -33,7 +33,7 @@ dage.forEach(bygmenu); // loop
 document.getElementById("tidsliste").innerHTML = tekst; // DOM
 
 // funktion der kaldes hver gang i loopet
-function bygmenu(value, index, array) { 
+function bygmenu(value) { 
     tekst += "<li>" + value + "</li>"; 
 }
 

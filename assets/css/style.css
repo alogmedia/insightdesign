@@ -192,10 +192,6 @@ html {
 
 .sidst-opdateret {
   white-space: nowrap; /* Keeps the text on one line */
-  margin-left: auto; /* Pushes the text to the far right */
-  position: absolute;
-  top: 10%;
-  right: 16%;
 }
 
 select {
@@ -273,6 +269,7 @@ select {
   margin-left: auto;
   margin-right: auto;
   margin-top: 25%;
+  margin-bottom: 4%;
 }
 
 .dataluft {
@@ -404,7 +401,7 @@ select {
   display: flex;
   background-color: #008559;
   color: #ffffff;
-  width: 30%;
+  width: 35%;
   border-radius: 5px;
   font-size: 1rem;
   border: none;
@@ -412,6 +409,8 @@ select {
   cursor: pointer;
   bottom: 10px; /* Adjust as needed */
   right: 5%;
+  align-items: center;
+  height: 30px;
 }
 
 .segraf:hover {
@@ -434,8 +433,11 @@ select {
   border: none;
   justify-content: center;
   cursor: pointer;
-  width: 40%;
+  width: 35%;
   right: 5%;
+  align-items: center;
+  height: 30px;
+
 }
 
 .segrafbund:hover {
@@ -460,6 +462,7 @@ select {
   height: 3%;
   align-items: center;
   margin-top: 1%;
+  margin-bottom: 1.5%;
 }
 
 .doegnrapport:hover {
@@ -472,7 +475,7 @@ select {
 
 /* FAR RIGHT SECTION */
 .right-section {
-  width: 20%; /* Assuming a three-column layout */
+  width: 80%; /* Assuming a three-column layout */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -575,17 +578,34 @@ select {
   }
   .segraf {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
     display: flex;
     background-color: #008559;
     color: #ffffff;
-    width: 50%;
+    width: 36%;
     border-radius: 5px;
     font-size: 1rem;
     border: none;
     justify-content: center;
     cursor: pointer;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px;
+    height: 24px;
+  }
+  .segrafbund {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    background-color: #008559;
+    color: #ffffff;
+    width: auto;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    width: 35%;
+    right: 5%;
+    align-items: center;
+    height: 24px;
   }
 }
 
@@ -623,7 +643,7 @@ select {
     position: absolute;
     background-color: #008559;
     color: #ffffff;
-    width: 40%;
+    width: 35%;
     font-size: 1rem;
   }
   .sidst-opdateret {
@@ -664,7 +684,7 @@ select {
     color: #ffffff;
     width: 30%;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 0.8em;
     border: none;
     justify-content: center;
     cursor: pointer;
@@ -675,19 +695,20 @@ select {
     position: relative;
     background-color: #008559;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 0.8em;
     margin-left: auto;
     margin-right: auto;
     right: 0%;
     bottom: 0;
+    width:30%;
   }
   .doegnrapport {
     display: flex;
     background-color: #008559;
     color: #ffffff;
     width: 70%;
-    border-radius: 30px;
-    font-size: 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
     border: none;
     justify-content: center;
     cursor: pointer;
@@ -696,6 +717,7 @@ select {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    height:30px;
   }
   .dataledning {
     display: flex;
@@ -813,6 +835,10 @@ select {
 
   .ledningcaption {
     font-size: 3vw; /* Example: 4% of viewport width, adjust as needed */
+  }
+  .doegnrapport {
+    width: 50%;
+    margin-top: 5%;
   }
 }
 

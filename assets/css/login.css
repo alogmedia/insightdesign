@@ -213,6 +213,7 @@ button a {
     position: relative; /* Needed to position the text and image */
     text-align: center;
     line-height: 200px; /* Centers the text vertically */
+    cursor: pointer;
 }
 
 .rolle a{
