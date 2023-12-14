@@ -23,7 +23,7 @@
   html {
     height: 100%;
     width: 100%;
-    background-image: url("assets/images/baggrund.jpg");
+    background-image: url("/hi/assets/images/baggrund.jpg");
     background-size: cover;
     background-attachment: fixed; /* This will fix the background image in place */
 }

@@ -1,3 +1,5 @@
+console.log("albert.js køre...")
+
 //Variabler
 let overlayalert = document.getElementById("overlayalert");
 let overlayalertImage = overlayalert.querySelector("img");
@@ -12,7 +14,6 @@ function getTemperatureText() {
   // find temperatur
   for (let h3 of h3Elements) {
     if (h3.textContent.includes("Temperatur")) {
-      // Get the next sibling element, which should be the <p> with the temperature
       return h3.nextElementSibling.textContent;
     }
   }
@@ -34,7 +35,7 @@ function checkValues() {
     // Se om temperatur er godkendt.
     if (temperature > temperatureLimit) {
       console.log(temperature);
-      overlayalert.style.display = "block"; // Assuming you want to show the overlay
+      overlayalert.style.display = "block";
       overlayalert.querySelector("h2").textContent = "Advarsel - " + temperature + "°"; 
       overlayalert.querySelector("p").textContent = "temperaturen er for høj!!";
       overlayalertImage.src = "assets/images/alert.png";
