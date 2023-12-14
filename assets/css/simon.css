@@ -60,7 +60,3 @@ input[type=number]{
 .forslag-listeelement:hover{
     background-color: #eaeaea;
 }
-
-.blomst{
-    z-index: 2;
-}

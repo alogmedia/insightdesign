@@ -180,6 +180,11 @@ html {
   margin-right: 5px; /* Spacing between icon and select box */
 }
 
+.pilned {
+  margin-left: auto;
+  margin-left: 5px;
+}
+
 .control-item select {
   border: none; /* Optional: removes the default border */
   background-color: transparent; /* Optional: makes the select background transparent */
